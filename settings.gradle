@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+//        maven-publish { url 'https://jitpack.io' }
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+
+        maven { url 'https://jitpack.io' }
+
+    }
+}
+rootProject.name = "WalletConnectLibAdd"
+include ':app'
+include ':lib'
